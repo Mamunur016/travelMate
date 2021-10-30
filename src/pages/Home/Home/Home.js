@@ -1,12 +1,14 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Choose from '../Choose/Choose';
+import Packages from '../Packages/Packages';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            BEST TOUR PACKAGE OFFERS FOR 2021
+            <Packages></Packages>
+
             <Choose></Choose>
 
         </div>

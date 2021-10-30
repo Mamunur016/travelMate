@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 
@@ -28,12 +28,28 @@ const Header = () => {
                             <NavLink to='/home' className='nav-item' activeStyle={activeStyle}>Home</NavLink>
                             <NavLink to='/about' className='nav-item' activeStyle={activeStyle}>About</NavLink>
 
+                            {/* <NavDropdown title="About" id="collasible-nav-dropdown" className='nav-item' activeStyle={activeStyle}>
+                                <NavDropdown.Item to='/about'>About  </NavDropdown.Item>
+                                <NavDropdown.Item to='/about' >About  </NavDropdown.Item>
+                                <NavDropdown.Item to='/about' >About  </NavDropdown.Item>
+
+                            </NavDropdown> */}
+
 
                             {/* <NavLink to='/login' className='nav-item' activeStyle={activeStyle}>Log In</NavLink> */}
 
                             {
-                                (user?.email) && <NavLink to='/contractus' className='nav-item' activeStyle={activeStyle}>Contract</NavLink>
+                                (user?.email) && <NavLink to='/myorders' className='nav-item' activeStyle={activeStyle}>MyOrders</NavLink>
                             }
+                            {
+                                (user?.email) && <NavLink to='/manageorders' className='nav-item' activeStyle={activeStyle}>ManageOrder</NavLink>
+                            }
+                            {
+                                (user?.email) && <NavLink to='/addnew' className='nav-item' activeStyle={activeStyle}>AddNew</NavLink>
+                            }
+                            {/* {
+                                (user?.email) && <NavLink to='/contractus' className='nav-item' activeStyle={activeStyle}>Contract</NavLink>
+                            } */}
 
 
                             {
@@ -56,7 +72,7 @@ const Header = () => {
                 </Container>
             </Navbar>
 
-        </div>
+        </div >
     );
 };
 

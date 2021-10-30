@@ -6,10 +6,15 @@ import About from './pages/About/About';
 
 
 import Home from './pages/Home/Home/Home';
+import AddNew from './pages/Login/AddNew/AddNew';
 import ContractUs from './pages/Login/ContractUs/ContractUs';
 import Login from './pages/Login/Login/Login';
+import ManageOrders from './pages/Login/ManageOrders/ManageOrders';
+import MyOrders from './pages/Login/MyOrders/MyOrders';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
+import ThankYou from './pages/Login/ThankYou/ThankYou';
+import TourDetails from './pages/Login/TourDetails/TourDetails';
 import NotFound from './pages/NotFound/NotFound';
 import OurTeam from './pages/OurTeam/OurTeam/OurTeam';
 import Footer from './pages/Shared/Footer/Footer';
@@ -40,9 +45,24 @@ function App() {
             <Route path='/ourteam'>
               <OurTeam></OurTeam>
             </Route>
+            <PrivateRoute path='/myorders'>
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path='/manageorders'>
+              <ManageOrders></ManageOrders>
+            </PrivateRoute>
 
             <PrivateRoute path='/contractus'>
               <ContractUs></ContractUs>
+            </PrivateRoute>
+            <PrivateRoute path='/addnew'>
+              <AddNew></AddNew>
+            </PrivateRoute>
+            <PrivateRoute path='/tours/:id'>
+              <TourDetails></TourDetails>
+            </PrivateRoute>
+            <PrivateRoute path='/thankyou'>
+              <ThankYou></ThankYou>
             </PrivateRoute>
 
             <Route path='/login'>
