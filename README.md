@@ -9,7 +9,15 @@ Travelmate brings you the places to visit in Dhaka as well as the places to visi
 
 
 ## Available Feature
-* 
+* In this project you can find easily best tourist spot
+* In this project we provide best touriest guide.
+* We provide best tour-package for you.
+* Travelmate knows the value of your time and the varieties bucket list of you. We have the innovative team to fulfill your taste of diverse destination.
+* Travelers want beautiful and unique places every time they want to leave the home. We’re ready with years of experience to introduce the best places in the Wolrd.
+* A long Tour Confirmation process can’t support you to purchase any tour package. Travelmate has tried to complete the whole process into one call.
+* We can provide best customer care for you.
+* We always keep the permissions of the authority for arranging any tour.
+* Travel Mate team made here to make your journey enjoyable and memorable.
 
 ## Tools and Framework for this project
 

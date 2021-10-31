@@ -49,9 +49,9 @@ const Footer = () => {
                     <Col lg={3} md={6} sm={6} xs={12}>
                         <h4 className='py-2'>
                             Quick Link</h4>
-                        <p><Link to='/tours' className='nav-item-footer'>Tours</Link></p>
+                        <p><Link to='/ourteam' className='nav-item-footer'>Our Team</Link></p>
 
-                        <p><Link to='/addnew' className='nav-item-footer'>Add Services</Link></p>
+                        <p><Link to='/addnew' className='nav-item-footer'>Add New</Link></p>
                         <p>  <Link to='/about' className='nav-item-footer'>
                             About Us
                         </Link></p>

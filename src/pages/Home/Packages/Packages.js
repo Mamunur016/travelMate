@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap';
-import Package from '../Choose/Package';
+import Package from '../Package/Package';
+
 
 const Packages = () => {
     const [packages, setPackages] = useState([]);
+    // load data
     useEffect(() => {
         fetch('https://shielded-retreat-55862.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => setPackages(data))
+            .catch(err => console.log(err))
     }, []);
+
+    // cheeck the data
 
     if (packages.length === 0) {
 

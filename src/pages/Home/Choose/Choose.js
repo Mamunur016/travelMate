@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Choose = () => {
     return (
-        <div className='py-5' style={{
+        <div className='pt-5' style={{
             background: "#D4E3E5"
         }}>
             <Container>
@@ -55,7 +55,57 @@ const Choose = () => {
 
                 </Row>
             </Container>
+
+            <div style={{
+                backgroundImage: `url('https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FpbnQlMjBtYXJ0aW4lMjBpc2xhbmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '100% 100%',
+                minHeight: "300px"
+            }} className='d-flex align-items-center'>
+                {/* count section */}
+
+                <Container>
+                    <div>
+                        <div className=' count py-2'>
+                            <Row md={4} sm={2} xs={1} className="g-3">
+                                <Col>
+                                    <div className='d-flex flex-column justify-content-center align-items-center'>
+                                        <h2 className='py-3 text-white'>20</h2>
+                                        <div className=" py-1 px-3  text-white" style={{ background: "#FFD205" }}>
+                                            DESTINATION
+
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className='d-flex flex-column justify-content-center align-items-center'>
+                                        <h2 className='py-3 text-white'>30</h2>
+                                        <div className=" py-1 px-3 text-white" style={{ background: "#1BBC9B" }}>TOURS PACK</div>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className='d-flex flex-column justify-content-center align-items-center'>
+                                        <h2 className='py-3 text-white'>32</h2>
+                                        <div className=" py-1 px-3  text-white" style={{ background: "#14B9D5" }}>CRUIES</div>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className='d-flex flex-column justify-content-center align-items-center'>
+                                        <h2 className='py-3 text-white'>24</h2>
+                                        <div className=" py-1 px-3 text-white" style={{ background: "#F76570" }}>HOUR_SUPPORT</div>
+                                    </div>
+                                </Col>
+
+                            </Row>
+                        </div>
+                    </div>
+                </Container>
+
+            </div>
+
+
         </div>
+
     );
 };
 

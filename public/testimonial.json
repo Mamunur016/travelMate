@@ -1,0 +1,50 @@
+﻿[
+    {
+        "id": "1",
+        "name": "Jasmine",
+        "title": "Amazing service!",
+        "img": "http://medicare.bold-themes.com/laboratory/wp-content/uploads/sites/15/2015/12/client-160x160.jpg",
+        "description": "I think it’s a good package for those people who are really want to go on a tour in Bandarban as a group tour or corporate tour.",
+        "star": 5
+    },
+    {
+        "id": "2",
+        "name": "Katelin Lee",
+        "title": "Helped me a lot",
+        "img": "http://medicare.bold-themes.com/laboratory/wp-content/uploads/sites/15/2018/03/client-02-160x160.jpg",
+        "description": "Nice tour experience with travelmate. We enjoyed our last cox’s bazar very much.",
+        "star": 5
+    },
+    {
+        "id": "3",
+        "name": "Mahadey",
+        "title": "Awesome optometrists",
+        "img": "http://medicare.bold-themes.com/laboratory/wp-content/uploads/sites/15/2018/03/client-03-160x160.jpg",
+        "description": "The trip was amazing and above all my expectations! From the start at booking to the final farewell dinner! The hotels were all great, the food was fantastic, and the sites we visited were all wonderful",
+        "star": 5
+    },
+    {
+        "id": "4",
+        "name": "Kazi sadia",
+        "title": "My vision is perfect",
+        "img": "http://medicare.bold-themes.com/laboratory/wp-content/uploads/sites/15/2018/03/client-05-160x160.jpg",
+        "description": "This was great experience! I was so impressed with our guides and all the accommodations and amazing itinerary. I would not hesitate to recommend this trip and the wonderful job of your company with organizing every aspect so well.",
+        "star": 5
+    },
+    {
+        "id": "5",
+        "name": "Kathrin",
+        "title": "Best lasik ever!",
+        "img": "http://medicare.bold-themes.com/laboratory/wp-content/uploads/sites/15/2018/03/client-04-160x160.jpg",
+        "description": "Our trip was great. We loved all the different adventures we had there. We saw and experienced so much. Great tour guides and very capable bus drivers made the trip very comfortable for all. They are a great team. Looking foward to my next Trip!",
+        "star": 5
+    },
+    {
+        "id": "6",
+        "name": "Tanzim",
+        "title": "Awesome optometrists",
+        "img": "http://medicare.bold-themes.com/laboratory/wp-content/uploads/sites/15/2015/12/client-160x160.jpg",
+        "description": "It was a great trip. We had a wonderful experience, the tour guide was fantastic. Everything was excellent, the itinerary was wonderful. Very nice hotels and good meals. The scenery was spectacular and the tours hit all the sites that we wanted to see. Thanks for all your hard work and making our trip special.",
+        "star": 5
+    }
+]

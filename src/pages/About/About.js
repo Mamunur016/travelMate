@@ -12,7 +12,7 @@ const About = () => {
                     <p>  Travel Mate is a registered leading tourism developer, tour planner and Travel Agency in Bangladesh. Travel Mate is a proud member of the Bangladesh Tourism Foundation (BTF). For the organized support, diverse destinations and flexible pricing have made Travel Mate, a trustworthy place for the passionate traveler. At the same time, we offer cheap tour packages with the best support for the special days including holidays and the time of tourist season.</p>
 
                     <p>Not to mention, Travel Mate covers traveling all over the world considering your mind and taste. Every day, Travel Mate Team is trying to add new areas in the travel sector. Every time a person goes on a tour he wants to enjoy the time to remove the monotony and enriching the new knowledge. In this case, we are secured and trying to arrange the things for increasing your entertaining parts.</p>
-                    <img src="https://www.travelmate.com.bd/wp-content/uploads/2020/02/group-photo-768x432.jpg" alt="" />
+                    <img src="https://www.travelmate.com.bd/wp-content/uploads/2020/02/group-photo-768x432.jpg" className='img-fluid' alt="" />
                 </div>
 
                 <div className='py-3'>
