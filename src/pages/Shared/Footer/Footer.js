@@ -51,12 +51,12 @@ const Footer = () => {
                             Quick Link</h4>
                         <p><Link to='/tours' className='nav-item-footer'>Tours</Link></p>
 
-                        <p><Link to='/addservices' className='nav-item-footer'>Add Services</Link></p>
+                        <p><Link to='/addnew' className='nav-item-footer'>Add Services</Link></p>
                         <p>  <Link to='/about' className='nav-item-footer'>
                             About Us
                         </Link></p>
-                        <p>  <Link to='/ourteam' className='nav-item-footer'>
-                            Our Team
+                        <p>  <Link to='/contractus' className='nav-item-footer'>
+                            Contract Us
                         </Link></p>
 
 

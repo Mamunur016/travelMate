@@ -7,7 +7,7 @@ const Banner = () => {
 
 
             <Container>
-                <h1 className='text-center py-3'>Welcome to Bangladesh: The Land of Rivers</h1>
+                <h1 className='text-center py-3 text-primary'>Welcome to TravelMate</h1>
                 <p className='text-center py-3'>
                     Travelmate brings you the places to visit in Dhaka as well as the places to visit in Bangladesh. We will guide you for visiting the tourist’s spots, historical places in Bangladesh, ecotourism sites in Bangladesh and World Heritage Sites in Bangladesh. Travel Mate Team is here to make your journey affordable, enjoyable and memorable. If you are a tourist or foreign citizen, just get in touch with us and we will take the work to handle your Visa Processing, Air-Ticketing, Hotel-Booking, Tourist Transport and tour-package planning that will be suitable for you.
                 </p>

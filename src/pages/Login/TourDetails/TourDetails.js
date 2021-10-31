@@ -15,7 +15,7 @@ const TourDetails = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        data.status = 'pending';
+        data.status = 'Pending';
         console.log(data);
 
         axios.post('https://shielded-retreat-55862.herokuapp.com/orders', data)
@@ -111,16 +111,18 @@ const TourDetails = () => {
 
 
 
-                                <select className='form-control'  {...register("destination", { required: true })} >
+                                <select className='form-control my-3'  {...register("cost", { required: true })} >
+                                    <option value={cost}>{cost}</option>
+
+
+                                </select>
+                                <select className='form-control my-3'  {...register("destination", { required: true })} >
                                     <option value={destination}>{destination}</option>
 
 
                                 </select>
 
-                                {/* <select className='form-control' defaultValue="" {...register("id")} >
-                                    <option value={id}>{id}</option>
 
-                                </select> */}
 
                                 <input placeholder="Your Phone Number" defaultValue="" {...register("phone")} required className='form-control my-3' />
 

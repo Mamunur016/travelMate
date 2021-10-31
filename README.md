@@ -20,7 +20,7 @@ Travelmate brings you the places to visit in Dhaka as well as the places to visi
 5. React hooks
 6. Node js
 7. Using conditional functions
-8. API()
+8. API(Create custom for this website)
 9. Object destructure
 10. firebase
 11. ES6 functionality

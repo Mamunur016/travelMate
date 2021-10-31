@@ -13,7 +13,7 @@ const AddNew = () => {
     const onSubmit = data => {
 
         console.log(data);
-        axios.post('http://localhost:5000/tours', data)
+        axios.post('https://shielded-retreat-55862.herokuapp.com/tours', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

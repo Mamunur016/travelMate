@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import useAuth from '../../../Hooks/useAuth';
 
 const ManageOrders = () => {
@@ -41,7 +41,7 @@ const ManageOrders = () => {
 
 
         const btn = document.getElementById(id);
-        if (btn.innerText === "pending") {
+        if (btn.innerText === "Pending") {
 
 
 
@@ -71,26 +71,66 @@ const ManageOrders = () => {
     return (
         <div className='py-5 bg-light'>
             <Container>
-                <h3>{user.email}</h3>
-                <h3> hey {user.displayName}</h3>
-                <h2>orders Available: {orders.length} </h2>
+
+                <h3 className='text-success'> Hey {user.displayName}</h3>
+                <h2 className='py-3 text-primary'>Orders Available: {orders.length} </h2>
 
 
-                <ul>
-                    {
-                        orders.map(order => <ol
-                            key={order._id}
-                        >{order.destination} :: {order.email}
+                {
+                    (orders.length > 0) && <div>
+                        <div className="table-responsive">
+                            <table class="table ">
 
-                            <button className='btn btn-outline-success' id={order._id} onClick={() => handleBtn(order._id)}>{order.status}</button>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Cost</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Handler  </th>
 
-                            <button className='btn ms-4 btn-outline-danger' onClick={() => handleDeleteOrder(order._id)}>X</button>
-                        </ol>)
-                    }
-                </ul>
+                                    </tr>
+                                    {
+                                        orders.map(order => <Tabel key={order._id}
+                                            order={order}
+                                            handleBtn={handleBtn}
+                                            handleDeleteOrder={handleDeleteOrder}
+                                        ></Tabel>)
+                                    }
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                }
             </Container>
         </div>
     );
 };
 
+const Tabel = (props) => {
+    const { status, cost, date, destination, email, _id } = props.order;
+    const handleDeleteOrder = props.handleDeleteOrder;
+    const handleBtn = props.handleBtn;
+    return (
+
+        <tr>
+            <th>{email}</th>
+            <td>{destination}</td>
+            <td>{cost}</td>
+            <td>{date}</td>
+            <td><button className='btn btn-outline-success' id={_id} onClick={() => handleBtn(_id)} >{status}</button>
+
+            </td>
+            <td> <button className='btn  btn-outline-danger ' onClick={() => handleDeleteOrder(_id)}>Remove</button></td>
+        </tr>
+    )
+}
+
+
 export default ManageOrders;
+
+
