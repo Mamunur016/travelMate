@@ -6,6 +6,8 @@ import About from './pages/About/About';
 
 
 import Home from './pages/Home/Home/Home';
+import TourAsiaDetails from './pages/Home/TourAsiaDetails/TourAsiaDetails';
+import TravelAsia from './pages/Home/TravelAsia/TravelAsia';
 import AddNew from './pages/Login/AddNew/AddNew';
 import ContractUs from './pages/Login/ContractUs/ContractUs';
 import Login from './pages/Login/Login/Login';
@@ -45,6 +47,12 @@ function App() {
             <Route path='/ourteam'>
               <OurTeam></OurTeam>
             </Route>
+            <Route path='/travelasia'>
+              <TravelAsia></TravelAsia>
+            </Route>
+            <PrivateRoute path='/asiatours/:id'>
+              <TourAsiaDetails></TourAsiaDetails>
+            </PrivateRoute>
             <PrivateRoute path='/myorders'>
               <MyOrders></MyOrders>
             </PrivateRoute>
@@ -55,6 +63,7 @@ function App() {
             <PrivateRoute path='/contractus'>
               <ContractUs></ContractUs>
             </PrivateRoute>
+
             <PrivateRoute path='/addnew'>
               <AddNew></AddNew>
             </PrivateRoute>

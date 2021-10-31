@@ -16,7 +16,7 @@ const TourDetails = () => {
 
     const onSubmit = data => {
         data.status = 'Pending';
-        console.log(data);
+        // console.log(data);
 
         axios.post('https://shielded-retreat-55862.herokuapp.com/orders', data)
             .then(res => {
